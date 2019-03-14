@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang"en">
+
+<head>
+    <title>Title</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var num1 = parseInt(prompt("masukkan angka pertama :"));
+        var num2 = parseInt(prompt("masukkan angka kedua :"));
+        var operator = prompt("pilih operator :");
+        var hasil;
+
+        if (operator == "tambah") {
+            hasil = num1 + num2;
+        } else if (operator == "kurang") {
+            hasil = num1 - num2;
+        } else if (operator == "kali") {
+            hasil = num1 * num2;
+        } else if (operator == "bagi") {
+            hasil = num1 / num2;
+        } else if (operator == "pangkat") {
+            hasil = Math.pow(num1, num2);
+        } else if (operator == "min") {
+            hasil = Math.min(num1, num2);
+        } else if (operator == "max") {
+            hasil = Math.max(num1, num2);
+        } else {
+            alert("operator tidak ditemukan");
+        }
+
+        alert("hasilnya adalah : " + hasil);
+
+    </script>
+</body>
+
+</html>
