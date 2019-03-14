@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang"en">
+
+<head>
+    <title>Title</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var nilai = parseInt(prompt("Masukkan nilai kamu (1-100) :"));
+
+        // if (nilai < 1 || nilai > 100) {
+        //     alert("Nilai tidak valid");
+        // } else if (nilai >= 80) {
+        //     alert("Dapat nilai A");
+        // } else if (nilai >= 60) {
+        //     alert("Dapat nilai B");
+        // } else if (nilai >= 40) {
+        //     alert("Dapat nilai C");
+        // } else {
+        //     alert("Dapat nilai D");
+        // }
+
+        if (nilai >= 80 && nilai <= 100) {
+            alert("Dapat nilai A");
+        } else if (nilai < 80 && nilai >= 60) {
+            alert("Dapat nilai B");
+        } else if (nilai < 60 && nilai >= 40) {
+            alert("Dapat nilai C");
+        } else if (nilai < 40 && nilai >= 1) {
+            alert("Dapat nilai D");
+        } else {
+            alert("Nilai tidak valid");
+        }
+
+    </script>
+</body>
+
+</html>
